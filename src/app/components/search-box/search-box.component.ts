@@ -7,17 +7,17 @@ import { GitDataService } from 'src/app/services/git-data.service';
   styleUrls: ['./search-box.component.scss']
 })
 export class SearchBoxComponent implements OnInit {
-  public queue: string;
+  public query: string;
 
   constructor(private gitDataService: GitDataService) { }
 
   ngOnInit() {
+
   }
 
 
   search() {
-    console.log(this.queue);
-    console.log(this.gitDataService.search(''));
+    this.gitDataService.searchRepos(this.query).subscribe((results) => {console.log(results); });
   }
 
 }
