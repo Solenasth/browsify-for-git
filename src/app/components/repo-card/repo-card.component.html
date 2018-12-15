@@ -1,0 +1,5 @@
+<h2 class="card__title">{{ data.name }}</h2>
+<p class="card__description">{{ data.description }}</p>
+<a href="{{ data.comments_url }}" class="card__commentLink">{{ data.comments_url }}</a>
+<button class="card__button" (click)="getComments()">get comments!</button>
+
