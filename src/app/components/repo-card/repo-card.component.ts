@@ -17,9 +17,9 @@ export class RepoCardComponent implements OnInit {
 
   getComments() {
     this.gitDataService.getComments(this.data.comments_url);
-    this.gitDataService.results_comments.subscribe(res => {
-      console.log(res);
-    });
+    // this.gitDataService.results_comments.subscribe(res => {
+    //   console.log(res);
+    // });
   }
 
 }

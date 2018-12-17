@@ -8,13 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RepoCardComponent } from './components/repo-card/repo-card.component';
 import { RepoListComponent } from './components/repo-list/repo-list.component';
+import { CommentCardComponent } from './components/comment-card/comment-card.component';
+import { CommentListComponent } from './components/comment-list/comment-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBoxComponent,
     RepoCardComponent,
-    RepoListComponent
+    RepoListComponent,
+    CommentCardComponent,
+    CommentListComponent
   ],
   imports: [
     BrowserModule,

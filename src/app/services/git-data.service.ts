@@ -31,12 +31,13 @@ export class GitDataService {
         // map desired values here:
         newComment.user = currentComment.user.login;
         newComment.avatarURL = currentComment.user.avatar_url;
-        newComment.date = currentComment.created_at;
+        newComment.date = currentComment.created_at.split('T')[0];
         newComment.body = currentComment.body;
         // return formatted instance
         return newComment;
       });
-      this.subject_comments.next(commentArray);
+      // array is reversed since it was requested that they show in reverse order, in the future sorting will be implemented
+      this.subject_comments.next(commentArray.reverse());
     });
   }
 

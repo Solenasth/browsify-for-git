@@ -1,0 +1,75 @@
+@import "../../../colors";
+
+.comment{
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+
+    display: flex;
+    justify-content: space-between;
+    word-wrap: break-word;
+    padding: 1rem 2rem;
+    
+    &__user{
+        padding: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        justify-content: center;
+        border-radius: .5rem;
+        background-color: $highlight;
+
+        &__username{
+            width: 100%;
+            text-align: center;
+            color: $background-color;
+            font-weight: bolder;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    
+        &__image{
+            background-color: whitesmoke;
+            width: 7rem;
+            height: 7rem;
+            clip-path: circle(3.5rem at center);
+        }
+    
+        &__date{
+            width: 100%;
+            text-align: center;
+            color: $background-color;
+            margin: 0;
+            padding-bottom: 1rem;
+    
+        }
+    }
+
+   
+
+    &__body{
+        overflow-y: scroll;
+        text-align: justify;
+        color: $background-color;
+        width: 100%;
+        padding: 1rem;
+        margin: 0 1rem;
+        border-radius: .5rem;
+        background-color: $highlight;
+        position: relative;
+        height: 10.5rem;
+        display: inline-block;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 2rem;
+        &::-webkit-scrollbar {
+            &-thumb{
+                background: $element-darker !important; 
+                &:hover{
+                    background: $background-color !important;
+                }
+            }   
+        }
+
+    }
+}
