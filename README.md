@@ -13,6 +13,11 @@ Fret not! for the only thing you need to do is to run `ng serve` for a dev serve
 i guess you could build the project, but due to time constrains it is not optimized for prod deployment.
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+do this at your own risk! 
+i mean, the worst that can happen is the app not running so, i guess its not that risky. 
+
+it is untested tho.
+
 ## About those unit tests
 
 You can run them, some (a lot) will not pass, because im a noob in testing, but i learned a lot about them, i know you're not supposed to retroactively make them work, but that is one of my next objectives for future updates, just because i want to learn more about testing. 
@@ -28,3 +33,6 @@ i really liked this exercise so i will try to update it to add a lot more functi
 * revise the ui design, it was kinda rushed.
 * fix some visual bugs
 * and whatever else comes to mind later.
+
+## have a croco! 🐊 and a nice day 
+
