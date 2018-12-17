@@ -1,27 +1,30 @@
-# BrowsifyForGit
+# BrowsifyForGit version 0.1
 
+A simple and kinda useless tool to visualize **all your git needs***! 
+*disclaimer: we asume all your needs are searching for repos and getting their comments*
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
-## Development server
+## i wanna see it! 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Fret not! for the only thing you need to do is to run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## i wanna see a production ready version!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
+i guess you could build the project, but due to time constrains it is not optimized for prod deployment.
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## About those unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can run them, some (a lot) will not pass, because im a noob in testing, but i learned a lot about them, i know you're not supposed to retroactively make them work, but that is one of my next objectives for future updates, just because i want to learn more about testing. 
 
-## Running end-to-end tests
+oh yeah, if you wanna see them fail you can run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## further update plans:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+i really liked this exercise so i will try to update it to add a lot more functionality to it, some things i have planned include: 
+* sorting methods and filters for searches.
+* more utility to search function, search by topic, lenguage, etc, there's a lot of interesting stuff in the api
+* a better way to represent each repo.
+* revise the ui design, it was kinda rushed.
+* fix some visual bugs
+* and whatever else comes to mind later.
