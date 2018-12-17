@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'colors';
+
+body{
+    background-color: $background-color;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+*{
+    transition: 200ms;
+    &:focus{
+        outline: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+    opacity: .5;
+    &-track{
+        background: transparent;
+    }
+    &-thumb{
+        background: $highlight; 
+        border-radius: .25rem;
+        &:hover{
+            background: $highlight-strong;
+        }
+    }
+    
+}
+
+

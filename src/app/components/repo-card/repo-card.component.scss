@@ -1,0 +1,44 @@
+@import '../../../colors';
+
+.card{
+    display: block;
+    box-shadow: 0 2px 6px 2px rgba(0,0,0,0.10);
+    background-color: $highlight;
+    border-radius: .5rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    width: 15rem;
+    height: 15rem;
+    overflow-y: scroll;
+    
+    &:hover{
+
+        animation: popout 0.5s ease-in-out 0s 1 both;
+        background-color: $highlight-strong;
+        cursor: pointer;
+    }
+    @keyframes popout {
+        0% {
+          box-shadow: 0 0 $background-color, 0 0 $background-color, 0 0 $background-color, 0 0 $background-color, 0 0 $background-color, 0 0 $background-color, 0 0 $background-color, 0 0 $background-color;
+          transform: translateX(0) translateY(0);
+        }
+        100% {
+          box-shadow: 1px 1px $background-color, 2px 2px $background-color, 3px 3px $background-color, 4px 4px $background-color, 5px 5px $background-color, 6px 6px $background-color, 7px 7px $background-color, 8px 8px $background-color;
+          transform: translateX(-8px) translateY(-8px);
+        }
+      }
+      
+        
+    &__title{
+        padding: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        color: $background-color;
+    }
+    &__description{
+        padding: 1rem;
+        padding-top: 0rem;
+        color: $textbox-color;
+    }
+}
